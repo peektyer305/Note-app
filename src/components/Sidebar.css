@@ -22,3 +22,22 @@
     height:80vh;
     overflow-y: scroll;
 }
+.sidebar-notes{
+    padding: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.sidebar-note-title{
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar-note p{
+    margin: 10px 0;
+
+}
+.sidebar-note time{
+    color: #999;
+}
+.sidebar-note:hover{
+    background-color: #f1f0f0;
+}
