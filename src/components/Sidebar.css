@@ -2,7 +2,7 @@
     flex:0 0 30%;
     height: 100vh;
     border-right: 1px solid #535bf2;
-    border-left: 30px;;
+    margin: 25px;
 }
 .sidebar-header{
     display: flex;
