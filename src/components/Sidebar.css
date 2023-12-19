@@ -3,7 +3,9 @@
     height: 100vh;
     border-right: 1px solid #535bf2;
     margin: 25px;
+    transition: all 0.3s;
 }
+
 .sidebar-header{
     display: flex;
     justify-content:space-between;
@@ -25,11 +27,13 @@
 .sidebar-notes{
     padding: 25px;
     cursor: pointer;
-    transition: all 0.3s;
 }
 .sidebar-note-title{
     display: flex;
     justify-content: space-between;
+}
+.sidebar-note-title button{
+    color: #999;
 }
 .sidebar-note p{
     margin: 10px 0;
