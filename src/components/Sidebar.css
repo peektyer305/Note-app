@@ -1,6 +1,6 @@
 .app-sidebar{
-    flex-basis: 30%;
+    flex-basis: 50%;
     height: 100vh;
-    overflow-y:scroll;
+    
     border-right: 1px solid #535bf2;
 }
