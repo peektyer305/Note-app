@@ -5,7 +5,7 @@ const Sidebar = () => {
     <div className="app-sidebar">
          <section className="sidebar-header">
             <h1>ノート</h1>
-            <button className="addbutton">追加</button>   
+            <button >追加</button>   
          </section>
          <section className="sidebar-notes">
             <div className="sidebar-note">

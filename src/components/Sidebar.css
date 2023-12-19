@@ -12,9 +12,9 @@
 .sidebar-header h1{
     margin: 0;
 }
-.addbutton{
+.sidebar-header button{
     color:aqua;
-    padding: 0;
+    margin-right: 40px;
     background: none;
    
 }
