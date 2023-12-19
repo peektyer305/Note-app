@@ -1,10 +1,20 @@
 import Sidebar from './components/Sidebar.jsx';
 import Main from "./components/Main.jsx";
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [notes,setNotes] = useState([]);
   const onAddNote = () =>{
-    console.log("note added.")
+    console.log("note added.");
+    const newNote = {
+      id:1,
+      title:"new note",
+      content:"content of note",
+      modDate: Date.now(),
+    };
+    setNotes(newNote);
+    console.log(notes);
   };
 
   return (
