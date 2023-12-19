@@ -3,3 +3,9 @@
     height: 100vh;
     border-right: 1px solid #535bf2;
 }
+.sidebar-header{
+    display: flex;
+    justify-content:space-between;
+    
+}
+
