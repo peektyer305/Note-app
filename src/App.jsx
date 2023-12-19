@@ -7,7 +7,6 @@ function App() {
 
   return (
     <div>
-      <p>布団ちゃん</p>
       <Sidebar />
       <Main />
     </div>
