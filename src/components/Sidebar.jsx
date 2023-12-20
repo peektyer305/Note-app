@@ -12,11 +12,11 @@ const Sidebar = ({onAddNote,notes}) => {
             <>
             <div className="sidebar-note">
             <div className="sidebar-note-title">
-            <strong>タイトル</strong>
+            <strong>{note.title}</strong>
             <button>削除</button>
             </div>
-            <p>Vanitas vanitatum.</p>
-            <time dateTime="2023-12-10">2023.12.10</time>
+            <p>{note.content}</p>
+            <time dateTime="2023-12-10">{note.modDate}</time>
         </div>
         </>
         ))}
