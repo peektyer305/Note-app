@@ -22,6 +22,9 @@ function App() {
     const filteredNotes = notes.filter((note) => note.id !== id);
     setNotes(filteredNotes);
   };
+  const getActiveNote = () =>{
+    return notes.find((note) => note.id === activeNote);
+  };
 
   return (
     <div className='Appcontainer'>
