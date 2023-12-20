@@ -17,10 +17,13 @@ function App() {
     console.log(notes);
     
   };
+  const deleteNote = () =>{
+
+  };
 
   return (
     <div className='Appcontainer'>
-      <Sidebar onAddNote = {onAddNote} notes = {notes}/>
+      <Sidebar onAddNote = {onAddNote} notes = {notes} deleteNote={deleteNote}/>
       <Main />
     </div>
   );
