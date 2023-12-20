@@ -11,7 +11,7 @@ const Sidebar = ({onAddNote,notes,deleteNote,activeNote,setActiveNote}) => {
         {notes.map((note) => (
             
             <div 
-            className={`sidebar-note ${note.id === activeNote && "active"}`} key = {note.id}
+            className={`sidebar-note ${note.id === activeNote&& "active"}`} key = {note.id}
             onClick={()=>setActiveNote(note.id)}>
             <header className="sidebar-note-title">
             <strong>{note.title}</strong>
