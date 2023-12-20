@@ -5,7 +5,7 @@ import { useState } from 'react';
 import uuid from 'react-uuid';
 function App() {
   const [notes,setNotes] = useState([]);
-  const [activeNote,setActiveNote] = useState(false);
+  const [activeNote,setActiveNote] = useState();
   const onAddNote = () =>{
     console.log("note added.");
     const newNote = {
