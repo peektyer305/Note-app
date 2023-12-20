@@ -14,7 +14,6 @@ const Sidebar = ({onAddNote,notes,deleteNote}) => {
             <header className="sidebar-note-title">
             <strong>{note.title}</strong>
             <button onClick={deleteNote}>削除</button>
-            引数を取るから無名関数でラッピングする
             </header>
             <p>{note.content}</p>
             <time dateTime={new Date(note.modDate).toLocaleDateString("ja-JP")}>{new Date(note.modDate).toLocaleDateString("ja-JP")}</time>
