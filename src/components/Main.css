@@ -1,5 +1,5 @@
 .Mainccontainer{
-    flex: 0 0 70%;
+    width: 70vw;
     height: 100vh;
 }
 .main-note-edit,
