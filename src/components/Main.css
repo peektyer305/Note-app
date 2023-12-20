@@ -1,6 +1,7 @@
 .Mainccontainer{
     flex:0 0 70%;
     height: 100vh;
+    overflow-y: scroll;
 }
 .main-note-edit,
 .main-note-preview
