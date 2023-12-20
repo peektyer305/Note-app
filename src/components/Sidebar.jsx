@@ -10,7 +10,7 @@ const Sidebar = ({onAddNote,notes}) => {
          <section className="sidebar-notes">
         {notes.map((note) => (
             <>
-            <div className="sidebar-note">
+            <div className="sidebar-note" key={note.id}>
             <div className="sidebar-note-title">
             <strong>{note.title}</strong>
             <button>削除</button>
