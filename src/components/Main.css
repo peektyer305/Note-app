@@ -1,5 +1,5 @@
 .Mainccontainer{
-    width: 70%;
+    flex: 70 0 0;
     height: 100vh;
     
 }
