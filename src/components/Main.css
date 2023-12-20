@@ -27,6 +27,7 @@
     font-size: 2rem;
 }
 .main-note-preview{
+    padding: 25px;
     border-top: 1px solid #535bf2;
     overflow-y: scroll;
     background: rgba(0, 0, 0, 0.04);
