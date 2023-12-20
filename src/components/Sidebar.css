@@ -20,6 +20,9 @@
     background: none;
    
 }
+.sidebar-header button:hover{
+    border-color: #535bf2;
+}
 .sidebar-notes{
     height:80vh;
     overflow-y: scroll;
