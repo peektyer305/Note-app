@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import uuid from 'react-uuid';
 function App() {
   useEffect(() =>{
-    localStorage.setItem("notes",notes);
+    localStorage.setItem("notes", JSON.stringify(notes));
   },[notes]);
   const [notes,setNotes] = useState([]);
   const [activeNote,setActiveNote] = useState();
