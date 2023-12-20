@@ -9,16 +9,17 @@ const Sidebar = ({onAddNote,notes,deleteNote}) => {
          </section>
          <section className="sidebar-notes">
         {notes.map((note) => (
-            <>
-            <div className="sidebar-note" key={note.id}>
-            <div className="sidebar-note-title">
+            
+            <div className="sidebar-note" key = {note.id}>
+            <header className="sidebar-note-title">
             <strong>{note.title}</strong>
             <button onClick={deleteNote}>削除</button>
-            </div>
+            引数を取るから無名関数でラッピングする
+            </header>
             <p>{note.content}</p>
             <time dateTime={new Date(note.modDate).toLocaleDateString("ja-JP")}>{new Date(note.modDate).toLocaleDateString("ja-JP")}</time>
         </div>
-        </>
+        
         ))}
             
          </section>
