@@ -18,7 +18,7 @@
     color:grey;
     margin-right: 40px;
     background: none;
-   
+    border-color: none;
 }
 .sidebar-header button:hover{
     border-color: #535bf2;
