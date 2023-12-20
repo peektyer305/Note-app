@@ -13,8 +13,9 @@ function App() {
       content:"content of note",
       modDate: Date.now(),
     };
-    setNotes(newNote);
+    setNotes([...notes,newNote]);
     console.log(notes);
+    
   };
 
   return (
