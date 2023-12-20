@@ -11,6 +11,7 @@ function App() {
     return savedNotes ? JSON.parse(savedNotes) : [];
   });
   const [activeNote,setActiveNote] = useState();
+  //notesを先に初期化してからこれを使わないとエラー出る！何もレンダリングされない。
   useEffect(() =>{
     localStorage.setItem("notes", JSON.stringify(notes));
  }, [notes]);
