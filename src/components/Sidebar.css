@@ -47,5 +47,6 @@
     background-color: #f1f0f0;
 }
 .sidebar-note.active{
-    background-color: #535bf2;
+    border-color: #535bf2 solid 3px;
+    opacity: 0.5;
 }
