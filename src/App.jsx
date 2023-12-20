@@ -25,6 +25,17 @@ function App() {
   const getActiveNote = () =>{
     return notes.find((note) => note.id === activeNote);
   };
+  const onUpdateNote = (updatedNote) =>{
+    const updatedNoteArray = notes.map((note) =>{
+      if(note.id === updatedNote.id){
+        return updatedNote;
+      }else{
+        return note;
+      }
+    });
+
+    setNotes(updatedNoteArray);
+  };
 
   return (
     <div className='Appcontainer'>
@@ -36,7 +47,7 @@ function App() {
       setActiveNote={setActiveNote}
       
       />
-      <Main activeNote = {getActiveNote()}/>
+      <Main activeNote = {getActiveNote()} onUpdateNote = {onUpdateNote}/>
     </div>
   );
 }
