@@ -7,11 +7,9 @@
 .main-note-preview
 {
     height: 50vh;
-    
-}
-.main-note-edit{
     padding: 25px;
 }
+
 .main-note-edit input, textarea{
     display: block;
     border: 1px solid grey;
@@ -27,7 +25,7 @@
     font-size: 2rem;
 }
 .main-note-preview{
-    padding: 25px;
+   
     border-top: 1px solid #535bf2;
     overflow-y: scroll;
     background: rgba(0, 0, 0, 0.04);
