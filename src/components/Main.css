@@ -1,3 +1,12 @@
 .Mainccontainer{
     flex:0 0 70%;
+    height: 100vh;
+}
+.main-note-edit,
+.main-note-preview
+{
+    height: 50vh;
+}
+.main-note-edit{
+    
 }
