@@ -1,5 +1,5 @@
 .Mainccontainer{
-    flex: 70 0 0;
+    flex: 0 0 70%;
     height: 100vh;
     
 }
@@ -8,6 +8,7 @@
 {
     height: 50vh;
     padding: 25px;
+    border-left:1px solid red ;
 }
 
 .main-note-edit input, textarea{
