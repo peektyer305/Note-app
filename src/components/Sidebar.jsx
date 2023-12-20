@@ -15,7 +15,7 @@ const Sidebar = ({onAddNote,notes,deleteNote,activeNote,setActiveNote}) => {
             onClick={()=>setActiveNote(note.id)}>
             <header className="sidebar-note-title">
             <strong>{note.title}</strong>
-            <button onClick={()=>deleteNote(note.id)}>削除</button>
+            <button className="deletebutton" onClick={()=>deleteNote(note.id)}>削除</button>
             </header>
             <p>{note.content}</p>
             <time dateTime={new Date(note.modDate).toLocaleDateString("ja-JP")}>{new Date(note.modDate).toLocaleDateString("ja-JP")}</time>
