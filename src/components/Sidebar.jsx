@@ -16,7 +16,7 @@ const Sidebar = ({onAddNote,notes}) => {
             <button>削除</button>
             </div>
             <p>{note.content}</p>
-            <time dateTime="2023-12-10">{note.modDate}</time>
+            <time dateTime={new Date(note.modDate).toLocaleDateString("ja-JP")}>{new Date(note.modDate).toLocaleDateString("ja-JP")}</time>
         </div>
         </>
         ))}
