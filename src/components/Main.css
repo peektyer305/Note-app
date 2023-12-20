@@ -1,7 +1,6 @@
 .Mainccontainer{
     flex: 0 0 70%;
     height: 100vh;
-    border-left: none;
 }
 .main-note-edit,
 .main-note-preview
