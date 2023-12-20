@@ -4,8 +4,10 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import uuid from 'react-uuid';
 function App() {
- 
-  const [notes,setNotes] = useState([]);
+ useEffect(() =>{
+  localStorage.setItem("notes", JSON.stringify(notes));
+ }, [notes]);
+  const [notes,setNotes] = useState(JSON.parse(localStorage.getItem("notes") )||[]);
   const [activeNote,setActiveNote] = useState();
   const onAddNote = () =>{
     console.log("note added.");
