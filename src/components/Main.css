@@ -1,7 +1,7 @@
 .Mainccontainer{
     flex:0 0 70%;
     height: 100vh;
-    overflow-y: scroll;
+    
 }
 .main-note-edit,
 .main-note-preview
@@ -24,4 +24,14 @@
 }
 .main-note-edit input{
     height: 50px;
+    font-size: 2rem;
+}
+.main-note-preview{
+    border-top: 1px solid #535bf2;
+    overflow-y: scroll;
+    background: rgba(0, 0, 0, 0.04);
+}
+.preview-title{
+    padding: 25px 25px 0 25px;
+    margin: 0;
 }
