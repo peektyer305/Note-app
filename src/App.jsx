@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className='Appcontainer'>
-      <Sidebar onAddNote = {onAddNote}/>
+      <Sidebar onAddNote = {onAddNote} notes = {notes}/>
       <Main />
     </div>
   );

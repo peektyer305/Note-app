@@ -1,6 +1,6 @@
 import "./Sidebar.css";
 
-const Sidebar = ({onAddNote}) => {
+const Sidebar = ({onAddNote,notes}) => {
   return (
     <div className="app-sidebar">
          <section className="sidebar-header">
@@ -8,14 +8,19 @@ const Sidebar = ({onAddNote}) => {
             <button onClick={onAddNote} >追加</button>   
          </section>
          <section className="sidebar-notes">
+        {notes.map((note) => (
+            <>
             <div className="sidebar-note">
-                <div className="sidebar-note-title">
-                <strong>タイトル</strong>
-                <button>削除</button>
-                </div>
-                <p>Vanitas vanitatum.</p>
-                <time dateTime="2023-12-10">2023.12.10</time>
+            <div className="sidebar-note-title">
+            <strong>タイトル</strong>
+            <button>削除</button>
             </div>
+            <p>Vanitas vanitatum.</p>
+            <time dateTime="2023-12-10">2023.12.10</time>
+        </div>
+        </>
+        ))}
+            
          </section>
 
     </div>
