@@ -5,7 +5,7 @@ const Main = ({activeNote, onUpdateNote}) => {
     onUpdateNote({
       ...activeNote,
       [key]: value,
-      modDate: Date.now().toLocaleString("ja-JP"),
+      modDate: Date.now(),
     });
   };
 
