@@ -46,3 +46,6 @@
 .sidebar-note:hover{
     background-color: #f1f0f0;
 }
+.sidebar-note.active{
+    background-color: #535bf2;
+}

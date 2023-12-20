@@ -10,7 +10,9 @@ const Sidebar = ({onAddNote,notes,deleteNote,activeNote,setActiveNote}) => {
          <section className="sidebar-notes">
         {notes.map((note) => (
             
-            <div className="sidebar-note active" key = {note.id}>
+            <div 
+            className={`sidebar-note ${note.id === activeNote && "active"}`} key = {note.id}
+            onClick={()=>setActiveNote(note.id)}>
             <header className="sidebar-note-title">
             <strong>{note.title}</strong>
             <button onClick={()=>deleteNote(note.id)}>削除</button>
